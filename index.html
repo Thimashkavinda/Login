@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title> <!-- Corrected typo: Registraion to Registration -->
+</head>
+<body>
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <div class="panel-heading text-center">
+                <h1>Registration Form</h1> <!-- Removed unnecessary class attribute value -->
+            </div>
+            <div class="panel-body">
+                <form action="connect.php" method="post">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label> <!-- Changed id value from firstName to lastName -->
+                        <input type="text" class="form-control" id="lastName" name="lastName" /> <!-- Changed id value from firstName to lastName -->
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label> <!-- Removed unnecessary for attribute from label tag -->
+                        <div>
+                            <label class="radio-inline"><input type="radio" name="gender" value="m">Male</label> <!-- Corrected type attribute value: redio to radio -->
+                            <label class="radio-inline"><input type="radio" name="gender" value="f">Female</label> <!-- Corrected type attribute value: redio to radio -->
+                            <label class="radio-inline"><input type="radio" name="gender" value="o">Others</label> <!-- Corrected type attribute value: redio to radio -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label> <!-- Corrected id value from email to password -->
+                        <input type="password" class="form-control" id="password" name="password" /> <!-- Changed input type from text to password -->
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label> <!-- Corrected id value from email to number -->
+                        <input type="text" class="form-control" id="number" name="number" /> <!-- Changed input type to text -->
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit"> <!-- Corrected class attribute value: btm to btn, added value attribute -->
+                </form>
+            </div>
+        </div>
+        <div class="panel-footer text-right"> <!-- Corrected class attribute value: pannel to panel -->
+            <small>&copy; Kavinda</small>
+        </div>
+    </div>
+</body>
+</html>
